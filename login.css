@@ -4,7 +4,7 @@
     margin: 0%;
 }
 body{
-    background-image: url(image/log\ in\ 2.jpg);
+    background-image: url(image/log\ in.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
      background-attachment: fixed; 
@@ -64,7 +64,7 @@ h5{
    font-family: Verdana, Geneva, Tahoma, sans-serif;
    /* text-align: center; */
    margin-left: 20%;
-   font-weight:
+
 }
 a{
    color:rgb(2, 124, 231);

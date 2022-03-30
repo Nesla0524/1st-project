@@ -5,9 +5,12 @@
      /*background image  */
  body{ 
      background-image: url(image/first\ page.jpg);
-     background-size: cover;
      background-repeat: no-repeat;
      background-attachment:fixed;
+     background-size:cover;
+   
+     
+    
  }
 
        /* logo */
@@ -33,6 +36,7 @@ a{
     font-size: larger;
     float:left; 
     padding: 8px;
+    border-radius: 10%;
 
     }
     a:hover{
