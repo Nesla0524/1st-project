@@ -1,3 +1,8 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+
 header{
      width: 1520px;
      height: 500px;
@@ -36,7 +41,7 @@ header{
         color: black;
     } 
 
-   p{
+ .d1 p{
        font-family: Verdana, Geneva, Tahoma, sans-serif;
        text-align: center;
        width: 50%;
@@ -49,14 +54,42 @@ header{
 
 .slide img{
    
-    width: 25%;
-    height: 25%;
-    margin-left: 4%;
-}
-.slide img:hover{
-    width: 26%;
+    width: 85%;
+    height: 40%;
+    margin-left:6%;
+    padding-top: 4%;
+   
 }
 
+.p1{
+ display: flex;
+ flex-wrap: wrap;
+ flex-direction:row;
+ align-items: center;
+ margin-left: 5%;
+ margin-top: 3%;
+ 
+ 
+   
+}
+ .slide{
+    margin: 35px;
+    width: 400px;
+    height: 500px;
+    box-shadow: 5px 5px 10px;
+ } 
+   
+   
+
+.slide p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 90%;
+  margin-left: 5%;
+
+}
+.slide h3{
+   margin-left: 20%;
+}
   
  
 

@@ -1,7 +1,7 @@
 body{
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: black;
+    
 }
 
 img{
@@ -31,7 +31,7 @@ a{
    font-size: 17px;
 }
 a:hover{
-    color: rgb(46, 0, 163);
+    color: rgb(51, 15, 141);
   
 }
 
