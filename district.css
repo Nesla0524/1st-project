@@ -1,6 +1,7 @@
 body{
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: black;
 }
 
 img{
@@ -24,10 +25,14 @@ img{
 }
 
 a{
-    color: rgb(116, 116, 116);
+    color: rgb(180, 175, 175);
     text-align: center;
      margin-left: 50px; 
    font-size: 17px;
+}
+a:hover{
+    color: rgb(46, 0, 163);
+  
 }
 
 h2{
@@ -63,6 +68,13 @@ header a{
     font-size: larger;
     padding: 8px;
     border-radius: 10%;
+    margin-top: 10%;
+}
+
+header a:hover{
+
+        background-color: rgb(250, 253, 255,0.4);
+        color: black;
 }
 
 form{
