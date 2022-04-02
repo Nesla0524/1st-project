@@ -9,10 +9,11 @@ header{
      background-image: url(image/R\ \(3\).jpg);
      background-repeat: no-repeat;
      background-size: cover;
-   
+}
+
      
   
- }
+ 
     header img{ 
     width:130px;
     height: 60px;
@@ -37,7 +38,7 @@ header{
 
     }
     header a:hover{
-        background-color: rgba(212, 212, 212, 0.4);
+        background-color: rgba(26, 24, 24, 0.4);
         color: black;
     } 
 
@@ -46,17 +47,22 @@ header{
        text-align: center;
        width: 50%;
        margin-left: 25%;
+       font-size: 20px;
+       line-height: 1.5em;
+       /* text-shadow: 1px; */
    } 
    h1{
        text-align: center;
        margin-top: 3%;
+       text-decoration: underline;
+       
    }
 
 .slide img{
    
     width: 85%;
     height: 40%;
-    margin-left:6%;
+    margin-left:7%;
     padding-top: 4%;
    
 }
@@ -76,7 +82,7 @@ header{
     margin: 35px;
     width: 400px;
     height: 500px;
-    box-shadow: 5px 5px 10px;
+    box-shadow: 4px 4px 14px;
  } 
    
    
@@ -88,9 +94,15 @@ header{
 
 }
 .slide h3{
-   margin-left: 20%;
+   /* margin-left: 20%; */
+   text-align: center;
+   font-weight: 500px;
+   font-size: 20px;
 }
+
+     
   
+
  
 
 

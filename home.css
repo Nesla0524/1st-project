@@ -24,7 +24,7 @@ body{
     cursor: pointer;
     border-radius: 30%;
     transition: 0.4s;
-    margin-bottom: 8%;
+    /* margin-bottom: 1%; */
 }
 .bar:hover{
     background-color: rgb(227, 232, 236);
