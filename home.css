@@ -33,7 +33,8 @@ body{
 
 input[name="r"]{
     position:absolute;  
-    visibility: hidden;  
+    visibility: hidden; 
+    overflow: hidden; 
      margin-right: 50%; 
  } 
 
@@ -41,6 +42,7 @@ input[name="r"]{
      width: 800%;
      height: 500px; 
     display: flex; 
+   
 }
 .slide{ 
      width: 100%;
@@ -50,6 +52,7 @@ input[name="r"]{
  .slide img{
     width: 50%; 
     height: 550px;
+  
 }  
 
 #r1:checked ~ .slide{
