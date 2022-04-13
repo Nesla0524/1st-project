@@ -42,7 +42,7 @@ body{
 }
 
 .input-box input{
-    height: 35px;
+    height: 40px;
     width: 100%;
     /* outline: none; */
     border-radius: 5px;
@@ -56,27 +56,47 @@ body{
  
 }
 .details{
-    color: white;
+    color: black;
     margin-bottom: 5px;
 }
-
-button{
-    font-size: 20px;
-    font-weight: bolder;
-    height: 100%;
-    width: 100%;
-    padding: 2%;
+.butt{
+    display: flex;
+   text-align: center;
+   margin-left: 18%;
+    
+}
+.next{
     background: linear-gradient(135deg, rgb(179, 229, 212), rgb(1, 47, 24));
+    padding:2% ;
+    margin-left: 5%;
+    text-decoration: none;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    width: 35%;
+    text-align: center;
+}
+.back{
+    background: linear-gradient(135deg, rgb(179, 229, 212), rgb(1, 47, 24));
+    padding:2% ;
   
+    text-decoration: none;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    width: 35%;
+    text-align: center;
 }
-button:hover{
-    height: 100%;
-    width: 100%;
-    padding: 2%;
+.next:hover{
     background: linear-gradient(135deg, rgb(133, 179, 211), rgb(19, 1, 67));
+  
 
 }
-
+.back:hover{
+    background: linear-gradient(135deg, rgb(133, 179, 211), rgb(19, 1, 67));
+}
 .connecting{
     text-align: center;
 }
@@ -91,12 +111,9 @@ button:hover{
     color: rgb(255, 100, 146);
 }
 
-.error{
-    display: none;
+.hea{
     color: white;
-    line-height: 1.5em;
 }
-
 
 
 

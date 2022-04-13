@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="sign up 2.css">
+</head>
+<body>
+  <div class="container">
+    <form action="index.html"  >
+      <div class="error-text"></div>
+       <div class="field">
+          <div class="input_box"> PASSWORD</div><br>
+          <input onkeyup="trigger()" id="psw" type="password" placeholder="enter your password">
+          </div><br><br>
+       <div class="indicator">
+          <span class="weak"></span>
+          <span class="medium"></span>
+          <span class="strong"></span>
+       </div>
+       <div class="text"></div>
+       <br><br>
+       <div class="field">
+       <div class="input_box">CONFIRM PASSWORD</div><br>
+       <input  class="cp"onkeyup="trigger2()" id="cpsw" type="password" placeholder="confirm your password">
+      </div><br><br>
+     
+    </form><br><br>
+    <div class="butt">
+      <a href="sign up.html" class="back">BACK</a><br>
+      
+      <button class="submit">SUBMIT</button>
+  </div>
+ </div>
+ <script src="sample.js"></script>
+</body>
+</html>

@@ -10,59 +10,47 @@
 </head>
 <body>
 
-    <form action="index.html" name="form"  onsubmit="return validate()" >
+    <form action="sign up 2.html" name="f1"  onsubmit="return validate()"  >
         <div class="container">
             <div class="title">CREATE YOUR ACCOUNT</div>
             <br>
              <div class="user-details">
-                <div class="input-box">
-                    <label  for="name" class="details">FIRST NAME</label>
-                    <input type="text"  placeholder="enter your first name" name="name1" id="name1">
+                    <div class="input-box">
+                       <div class="hea">FIRST NAME</div>
+                       <input type="text"  placeholder="enter your first name" name="firstname" class="details">
+                       <span id="name1" style="color:red"></span>
+                    </div>
+                    <br><br>
+                    <div class="input-box">
+                        <div class="hea">LAST NAME</div>
+                         <input type="text"  placeholder="enter your last name" name="lastname" class="details">
+                         <span id="name2" style="color:red"></span>
+                    </div>
+                         <br><br>
+                     <div class="input-box">
+                         <div class="hea">EMAIL ID</div>
+                         <input type="email"  placeholder="enter your email id" name="maillocation" class="details">
+                         <span id="mail" style="color:red"></span>
+                     </div>
+                         <br><br>
+                     <div class="input-box">
+                         <div class="hea">PHONE NUMBER</div>
+                         <input type="text"  placeholder="enter your phone number" name="phnnum" class="details">
+                         <span id="phn" style="color:red"></span>
+                     </div>
+                         <br><br>
                     
-                </div>
-                    <br><br>
-                <div class="input-box">
-                    <label for="name" class="details" >LAST NAME</label>
-                    <input type="text"  placeholder="enter your last name" name="name2" id="name2">
-                    <div class="error"></div>
-                </div>
-                    <br><br>
-                <div class="input-box">
-                    <label for="mail" class="details">EMAIL ID</label>
-                    <input type="email" placeholder="enter your email id" name="mail" id="mail">
-                    <div class="error"></div>
-                </div>
-                    <br><br>
-                <div class="input-box">
-                    <label for="phn" class="details">PHONE NUMBER</label>
-                    <input type="text" placeholder="enter your phone number" name="phn" id="phn">
-                    <div class="error"></div>
-                </div>
-                    <br><br>
-                <div class="input-box">
-                    <label for="password" class="details">PASSWORD</label>
-                    <input type="password"  placeholder="enter your password" name="pass1" id="pass1" >
-                    <div class="error"></div>
-                </div>
-                    <br><br>
-                <div class="input-box">
-                    <label for="password" class="details"> CONFIRM PASSWORD</label>
-                    <input type="password"  placeholder="confirm your password" name="pass2" id="pass2">
-                    <div class="error"></div>
-                </div>
+             </div>
+                 <br><br>
+                <div class="butt">
+                    <a href="index.html" class="back">BACK</a><br>
                     
-            </div>
-            <br><br>
-                <div class="buttons">
-                    <button type="submit" id="submit">SUBMIT</button>
-                </div><br>
-              <div class="connecting">
-            <h5>Have already account 
-            <a href="login.html">login here</a> 
-            </h5>
+                    <button class="next">NEXT</button>
+                </div>
+                <br><br><br>
+             
         </div>
-        
-        </div>
+    
  </form>
  <script src="sign up.js"></script>
     
