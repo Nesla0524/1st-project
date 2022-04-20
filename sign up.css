@@ -114,6 +114,11 @@ body{
 .hea{
     color: white;
 }
-
+.connecting h5{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-align: center;
+    font-weight: lighter;
+  }
 
 

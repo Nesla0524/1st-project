@@ -2,8 +2,10 @@ function validate()
 {
 var fname=document.f1.firstname.value;  
 var lname=document.f1.lastname.value;
-var email=document.f1.maillocation.value;
 var num= document.f1.phnnum.value;
+var email=document.f1.maillocation.value;
+var error = document.getElementById("error");
+var regEXp = /^([A-za-z0-9\.-]+)@([A-Za-z0-9\-]+).([a-z]{2,3})(.[a-z]{2,3})?$/;
 
 
 if(fname==""){  
@@ -32,15 +34,6 @@ if(lname==""){
              }
 
 
-if(email==""){  
-    document.getElementById("mail").innerHTML=
-    " Please enter your email id !!";  
-    return false;
-    }else{  
-    document.getElementById("mail") ;
-    
-    }
-   
 if(num==""){  
     document.getElementById("phn").innerHTML=
     " Please enter your phone number !!";  
@@ -56,5 +49,22 @@ if(num==""){
         "enter 10 digt number !!";
         return false;
     }
+    if(email=="")
+    {
+        document.getElementById("mail").innerHTML ="enter your email id";
+        return false;
+    }
+  if(regEXp.test(email.value))
+    {
+        document.getElementById("mail").innerHTML="valid";
+   
+    return true;
+       
+}else{
+    document.getElementById("mail");
+    return true;
+}
 
-}   
+   
+
+}

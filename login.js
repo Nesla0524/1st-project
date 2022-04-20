@@ -1,24 +1,24 @@
 function validate(){  
-    var name=document.f1.name.value;  
-    var passwordlength=document.f1.password.value.length;  
-    var status=false;  
-    if(name==""){  
+    var mail=document.f1.email.value;  
+    var passwordlength=document.f1.password.value;  
+    var regEXp = /^([A-za-z0-9\.-]+)@([A-Za-z0-9\-]+).([a-z]{2,3})(.[a-z]{2,3})?$/;
+    
+    if(mail==""){  
     document.getElementById("emaillocation").innerHTML=
     " Please enter your email id !!";  
-    status=false;
-    }else{  
-    document.getElementById("emaillocation") ;
-    status=true;
-    }  
-   if(passwordlength<8){  
+    return false;
+    } 
+    if(regEXp.test(mail.value))
+    {
+        document.getElementById("emaillocation").innerHTML="valid";
+         return false;
+       
+}
+
+   if(passwordlength.length <=8){  
     document.getElementById("passwordlocation").innerHTML=  
     "Password must be 8 characters !!";  
-    status=false; 
-    }else{  
-    document.getElementById("passwordlocation");
+    return false ;     
    
-    }      
-   
-      
-    return status;  
-    }
+
+    }}

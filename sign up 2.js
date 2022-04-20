@@ -10,11 +10,12 @@ const pswrd_2 = document.querySelector("#cpsw");
 const errorText = document.querySelector(".error-text");
 const btn = document.querySelector("button");
 
-let regExpWeak = /[a-z]/;
+let regExpWeak = /[a-z][A-z]/;
 let regExpMedium = /\d+/;
 let regExpStrong = /.[!,@,#,$,%,^,&,*,?,_,~,-,(,)]/;
+
 function trigger(){
-  if(pswrd_1.value.length >= 6){
+  if(pswrd_1.value.length >= 8){
     btn.removeAttribute("disabled", "");
     btn.classList.add("active");
     pswrd_2.removeAttribute("disabled", "");
@@ -59,9 +60,9 @@ function trigger(){
  if(input.value != ""){
     indicator.style.display = "block";
     indicator.style.display = "flex";
-    if(input.value.length <= 3 && (input.value.match(regExpWeak) || input.value.match(regExpMedium) || input.value.match(regExpStrong)))no=1;
+    if(input.value.length >= 3 && (input.value.match(regExpWeak) || input.value.match(regExpMedium) || input.value.match(regExpStrong)))no=1;
     if(input.value.length >= 6 && ((input.value.match(regExpWeak) && input.value.match(regExpMedium)) || (input.value.match(regExpMedium) && input.value.match(regExpStrong)) || (input.value.match(regExpWeak) && input.value.match(regExpStrong))))no=2;
-    if(input.value.length >= 6 && input.value.match(regExpWeak) && input.value.match(regExpMedium) && input.value.match(regExpStrong))no=3;
+    if(input.value.length >= 8 && input.value.match(regExpWeak) && input.value.match(regExpMedium) && input.value.match(regExpStrong))no=3;
     if(no==1){
       weak.classList.add("active");
       text.style.display = "block";
@@ -82,27 +83,14 @@ function trigger(){
       strong.classList.add("active");
       text.textContent = "Your password is strong";
       text.classList.add("strong");
+     
     }else{
       strong.classList.remove("active");
       text.classList.remove("strong");
+    
     }
-    showBtn.style.display = "block";
-    showBtn.onclick = function(){
-      if(input.type == "password"){
-        input.type = "text";
-        showBtn.textContent = "HIDE";
-        showBtn.style.color = "#23ad5c";
-      }else{
-        input.type = "password";
-        showBtn.textContent = "SHOW";
-        showBtn.style.color = "#000";
-      }
-    }
-  }else{
-    indicator.style.display = "none";
-    text.style.display = "none";
-    showBtn.style.display = "none";
-  }
+ 
+}
 }
 
 
